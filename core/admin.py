@@ -7,10 +7,8 @@ class CustomUserAdmin(UserAdmin):
         (None, {
             'classes': ('wide',),
             'fields': ('username', 'email', 'first_name', 'last_name', 
-                       'password', 'password2', 'city', 'stage', 'address', 'phone','is_staff', 'is_activate')
+                       'password1', 'password2', 'city', 'state', 'address', 'phone', 'is_staff')
         }),
     )
-
-
 
 admin.site.register(CustomUser, CustomUserAdmin)
